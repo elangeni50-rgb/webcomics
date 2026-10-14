@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(240, 224, 82, 0), rgba(34, 194, 29, 0)), url(imagenes/fondon°10000.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 8%; 
+    overflow-x: visible; 
+}
+
+.bloque-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 6.5rem; 
+    color: #F84474; 
+    text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #4a122c; 
+    margin-bottom: 0; 
+}
+
+.titulo h3 {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #4a122c;
+    text-shadow: 2px 2px 0px #ffffff;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.elige h2 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #FF9F1C;
+    text-shadow: 4px 4px 0px #000000, 6px 6px 0px #5c2c00;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    text-align: center;
+}
+.informacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.botones a {
+    display: inline-block;
+    width: 280px; 
+    padding: 16px 0; 
+    font-family: "Sniglet", sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3); 
+    border-radius: 50px; 
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.25); 
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+
+
+.botones a:hover {
+    transform: translateY(4px);
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+#manhwa { background-color: #00B4F0; }
+#manga { background-color: #2ECC71; }
+#manhua { background-color: #C060DE; }
+
+.tarjeta {
+    position: absolute;
+    top: 50%;
+    left: -380px; 
+    transform: translateY(-50%) scale(0.9);
+    width: 350px; 
+    background-color: #1a1a1a;
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    text-align: left;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tarjeta h4 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.65rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.tarjeta p {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.8rem; 
+    line-height: 1.6;
+    text-shadow: none;
+}
+
+#manhwa .tarjeta p { color: #00B4F0; }
+
+#manga .tarjeta p { color: #2ECC71; }
+
+#manhua .tarjeta p { color: #C060DE; }
+
+.botones a:hover .tarjeta {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}

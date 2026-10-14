@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Mangas</title>
+    <link rel="stylesheet" href="listas2.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="barranavegacion">
+        <div class="logo">
+            <img src="imagenes/logo-removebg-preview.png" alt="Logo M">
+        </div>
+
+         <div class="importante">
+            <div class="barragenero">
+                <select name="generos" id="selecciongeneros" onchange="location = this.value;">
+                    <option value="mangas.html">Todos</option>
+                    <option value="romancemangas.html">Romance</option>
+                    <option value="blmangas.html" selected>BL (Boys Love)</option>
+                    <option value="accionmangas.html">Acción</option>
+                    <option value="terrormangas.html">Terror</option>
+                    <option value="fantasiamangas.html">Fantasía</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="buscador">
+            <input type="text" placeholder="Buscar manga...">
+            <button type="submit" class="btn-buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav class="opciones-verticales">
+        <h3 class="titulo-sidebar">Te puede interesar</h3>
+        <ul>
+            <li><a href="manhwas.html">Manhwas</a></li>
+            <li><a href="mangas.html" class="activo">Mangas</a></li>
+            <li><a href="manhuas.html">Manhuas</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-principal con-sidebar">
+        <h2 class="titulo-seccion">Mangas BL</h2>
+
+               <section class="cuadricula-manhwas">
+
+                  <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/cocco tonokoto.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Cocco to no Koto</h4>
+                    <p class="genero-tarjeta">Género: BL, romance</p>
+                    <p class="sinopsis-manhwa"> Kokko es un inocente y pequeño gallo (macho) con problemas de crecimiento que está completamente convencido de que es una gallina (hembra), teniendo el gran sueño de poner un huevo y ser mamá. Su vida cambia cuando se cruza con un apuesto y enorme gallo que no tiene a dónde ir. Este gallo no duda en proponerle matrimonio e iniciar una divertida convivencia juntos. A pesar de los enredos biológicos y la confusión de identidades, ambos forman una entrañable y alocada familia que más adelante termina adoptando un huevo de otra especie</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐☆</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/ero mangaka to ashi-kun.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Ero Mangaka to Ashi-kun </h4>
+                    <p class="genero-tarjeta">Género: BL, romance</p>
+                    <p class="sinopsis-manhwa">Kenji Kaga es un descuidado autor de manga erótico cuya caótica rutina laboral lo lleva al colapso. Para evitar más desastres, su editor contrata a Rui Fumitsuki, un joven servicial que resulta ser el mayor admirador de su obra. Siendo alguien solitario y huraño, Kenji idea un plan absurdo para ahuyentarlo y hacer que renuncie por su propia cuenta: masturbarse frente a él fingiendo que es parte de su proceso creativo. Sin embargo, la devoción de Rui rompe todos los esquemas, dando inicio a una convivencia repleta de enredos subidos de tono y un inesperado afecto mutuo</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/fulano y mengano tambien quieren ser protagonistas.jpg" alt="portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Fulano y Mengano también quieren ser protagonistas</h4>
+                    <p class="genero-tarjeta">Género: BL, comedia</p>
+                    <p class="sinopsis-manhwa">Eiji Mobuyama ("Fulano") y Shiro Mobutani ("Mengano") son dos estudiantes de bachillerato que descubren que comparten la misma trágica realidad: ambos son simples personajes secundarios del montón (NPC) que viven relegados a la sombra de los chicos más populares de la clase. Desesperados por no pasar el resto de sus vidas siendo invisibles, Mengano propone un descabellado plan maestro: imitar todos los clichés de los mangas BL de su hermana para forzar al destino y convertirse, por fin, en los flamantes protagonistas de su propia historia de amor</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/jingai x omegaverse.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Jingai X Omegaverse BL</h4>
+                    <p class="genero-tarjeta">Género: BL, omegaverse</p>
+                    <p class="sinopsis-manhwa">Una atrevida y fantástica recopilación de historias cortas en la que los tradicionales lazos del Omegaverse se trasladan al mundo mitológico y de los monstruos. Diversos autores exploran apasionantes encuentros románticos y eróticos protagonizados por dinámicas Alfa y Omega entre humanos y toda clase de seres no humanos (como demonios, monstruos marinos, hombres lobo y criaturas fantásticas) durante sus intensos periodos de celo</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/lovers on the last train.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Lovers on the Last Train</h4>
+                    <p class="genero-tarjeta">Género: BL, Romance</p>
+                    <p class="sinopsis-manhwa"> Harue Shindo es un ingeniero de 42 años que, debido a su timidez y falta de experiencia, ha pasado toda su vida reprimiendo sus deseos de enamorarse. Un día decide probar una aplicación de citas desarrollada por su propia empresa y, por accidente, hace match con Fujishima, un atractivo organizador de bodas de su misma edad. Tras una primera cita llena de tragos y una gran química, ambos pierden el último tren de la noche. Obligados a compartir habitación en un hotel, dan inicio a un sincero y reconfortante romance maduro que demuestra que nunca es tarde para encontrar al alma gemela</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/megumi to stugumi.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Megumi to Tsugumi</h4>
+                    <p class="genero-tarjeta">Género: BL, omegaverse, escolar</p>
+                    <p class="sinopsis-manhwa">Tsugumi es un delincuente juvenil de armas tomar y con un orgullo inquebrantable que detesta profundamente a los Alfas, a quienes ve como simples dominantes arrogantes. A diferencia de otros Omegas, rechaza usar supresores y jura controlar sus periodos de celo usando únicamente su pura fuerza de voluntad. Sin embargo, sus planes y su temperamento chocan de frente cuando se cruza con Megumi, un Alfa de élite rico y un tanto rebelde. Megumi, lejos de ser el típico abusador, se enamora perdidamente de la ferocidad de Tsugumi y se dedica a cuidarlo, desatando una caótica, tierna e hilarante dinámica de amor y odio</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/Ookami e no yomeiri-Ishu Konintan.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Ookami e no Yomeiri: Ishu Kon'intan</h4>
+                    <p class="genero-tarjeta">Género: BL, hombres bestia</p>
+                    <p class="sinopsis-manhwa">Tras un año de pésimas cosechas, la aldea de la tribu Conejo se encuentra al borde de la hambruna. La salvación llega con una inesperada propuesta de la influyente tribu Lobo: raciones completas de comida para todo el pueblo durante dos años a cambio de enviar a alguien para casarse con el hijo de la prestigiosa familia Kuroe. Kaede, un joven huérfano de la tribu Conejo, es el elegido y enviado como "novia". Sintiéndose más como un sacrificio que como un cónyuge, Kaede llega a su nuevo hogar donde choca de inmediato con Ren, su frío y distante esposo lobo, dando inicio a una convivencia llena de tensiones de depredador y presa que poco a poco se transforma en un lazo íntimo y protector</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/Raion Gotoki no Kuni Kara.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Raion Gotoki no Kuni kara</h4>
+                    <p class="genero-tarjeta">Género: BL, extranjero</p>
+                    <p class="sinopsis-manhwa">Makoto es un estudiante de preparatoria común y corriente que adora a los animales. Su monótona rutina da un vuelco total cuando se entera de que Luca, un estudiante de intercambio perteneciente a la tradicional tribu Masái de Kenia, se hospedará en su casa. Aunque Makoto se preparaba mentalmente para enfrentar un severo choque cultural, se topa de frente con un chico moderno, carismático y extremadamente sociable... ¡que además cree firmemente que Makoto es una chica! A pesar del divertido malentendido inicial, la convivencia diaria estrechará sus lazos, transformando el choque de mundos en un romance tan cálido como inesperado</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐☆</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/Ui Koi Minami no shima de senjumin ni kyai sareteimasu.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Ui Koi ~Minami no Shima de Senjuumin ni Kyuai sareteimasu~</h4>
+                    <p class="genero-tarjeta">Género: BL, extranjero/p>
+                    <p class="sinopsis-manhwa"> Buscando un respiro de su estresante rutina, un joven japonés decide tomar unas vacaciones en un paradisíaco resort de una isla del sur. Sin embargo, la verdadera aventura comienza cuando se aleja de la zona turística y se cruza con Laki, un apuesto, imponente y protector indígena de piel bronceada que queda completamente cautivado por él. A pesar de la enorme barrera del idioma y el fuerte choque cultural, Laki no duda en iniciar un apasionado e implacable cortejo. Entre enredos tropicales, atenciones salvajes y una innegable atracción física, el joven terminará rindiéndose ante los intensos encantos de su enamorado nativo</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/Umi no soko.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Umi no Soko</h4>
+                    <p class="genero-tarjeta">Género: BL, fantasia</p>
+                    <p class="sinopsis-manhwa"> Wakashio es el hijo menor del jefe de una aldea costera que vive oprimido por las estrictas tradiciones de su familia. Su único consuelo son sus citas secretas con Yakaze, un joven de la tribu del bosque al que ama profundamente. Sin embargo, la tragedia golpea cuando su hermano descubre el romance y asesina cruelmente a Yakaze. Sumido en la desesperación absoluta, Wakashio presencia el inesperado regreso de su amado bajo una forma inhumana, pálida y monstruosa. Al notar que el alma de Yakaze sigue intacta, ambos deciden desafiar las oscuras costumbres locales y buscar un camino para vivir su amor más allá de la muerte.</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/el palacio del omega.avif" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa"> Kouguu no Omega</h4>
+                    <p class="genero-tarjeta">Género: BL, historico, omegaverse</p>
+                    <p class="sinopsis-manhwa"> Ilya es el decimotercer príncipe de un pequeño reino que ha vivido resignado al desprecio de su familia por nacer como omega. Para asegurar el bienestar de su pueblo, acepta un matrimonio político concertado con Khalid, el soberano de un imperio aliado. Sin embargo, a su llegada al majestuoso pero peligroso palacio interior, se cruza el mismo día con un misterioso muchacho. Este imprevisto encuentro desatará una red de secretos dinásticos, conspiraciones y un tierno e inesperado romance que desafiará su destino</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes/mangas/bl/tensei mob wa bl-gee no sekai de hamerare kouryakusaremashita" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Tensei Mob wa BL-gee no Sekai de Hamerare Kouryakusaremashita!? </h4>
+                    <p class="genero-tarjeta">Género: BL, fantasia</p>
+                    <p class="sinopsis-manhwa"> Un joven común y corriente reencarna en el caótico universo de su videojuego BL favorito. Sabiendo perfectamente cómo terminan las retorcidas rutas del juego, se mentaliza para mantenerse al margen y vivir una vida pacífica como un simple personaje de relleno (NPC) sin relevancia. Sin embargo, el destino y la inteligencia artificial del juego tienen otros planes: debido a una serie de caóticos malentendidos, los atractivos intereses amorosos principales terminan fijándose en él, arrastrándolo a las mismas situaciones comprometedoras y candentes de las que tanto intentaba escapar</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+</html>
