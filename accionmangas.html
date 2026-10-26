@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Mangas</title>
+    <link rel="stylesheet" href="listas2.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="barranavegacion">
+        <div class="logo">
+            <img src="imagenes1/logo-removebg-preview.png" alt="Logo M">
+        </div>
+
+         <div class="importante">
+            <div class="barragenero">
+                <select name="generos" id="selecciongeneros" onchange="location = this.value;">
+                    <option value="mangas.html">Todos</option>
+                    <option value="romancemangas.html">Romance</option>
+                    <option value="blmangas.html" >BL (Boys Love)</option>
+                    <option value="accionmangas.html" selected>Acción</option>
+                    <option value="terrormangas.html">Terror</option>
+                    <option value="fantasiamangas.html">Fantasía</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="buscador">
+            <input type="text" placeholder="Buscar manga...">
+            <button type="submit" class="btn-buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav class="opciones-verticales">
+        <h3 class="titulo-sidebar">Te puede interesar</h3>
+        <ul>
+            <li><a href="manhwas.html">Manhwas</a></li>
+            <li><a href="mangas.html" class="activo">Mangas</a></li>
+            <li><a href="manhuas.html">Manhuas</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-principal con-sidebar">
+        <h2 class="titulo-seccion">Mangas de accion</h2>
+
+               <section class="cuadricula-manhwas">
+
+                  <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/berserk.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Berserk</h4>
+                    <p class="genero-tarjeta">Género: Accion, seinen</p>
+                    <p class="sinopsis-manhwa">Guts es un guerrero solitario marcado por una infancia trágica en los campos de batalla. Tras encontrar brevemente un hogar y un propósito junto al carismático líder Griffith en la "Banda del Halcón", su vida es destruida por una devastadora traición que lo condena a ser perseguido eternamente por demonios. Armado con una espada colosal y una prótesis de hierro, el infatigable Espadachín Negro emprende un sangriento viaje de venganza, desafiando a deidades y monstruos en una lucha desesperada contra su propio destino</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/bleach.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Bleach</h4>
+                    <p class="genero-tarjeta">Género: Accion, sobrenatural</p>
+                    <p class="sinopsis-manhwa"> Ichigo Kurosaki es un adolescente de quince años con la extraña capacidad de ver fantasmas. Su vida cambia radicalmente cuando conoce a Rukia Kuchiki, una Shinigami (Dios de la Muerte) encargada de purificar a los "Hollows", espíritus malignos que devoran almas. Tras un violento ataque en el que Rukia resulta herida, ella se ve obligada a transferirle sus poderes a Ichigo, convirtiéndolo accidentalmente en un Segador de Almas sustituto. A partir de ese momento, el joven deberá empuñar su espada para proteger tanto el mundo humano como la mística Sociedad de Almas</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/chainsawman.webp" alt="portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Chainsaw Man</h4>
+                    <p class="genero-tarjeta">Género: Accion, fantasia</p>
+                    <p class="sinopsis-manhwa">Denji es un adolescente sumido en la miseria que caza demonios junto a su fiel perro demonio, Pochita, para saldar una inmensa deuda heredada de la mafia. Tras sufrir una brutal traición que le cuesta la vida, Pochita se fusiona con su corazón para salvarlo, permitiéndole revivir con la asombrosa capacidad de transformar sus extremidades y cabeza en motosierras. Reclutado de inmediato por los Cazadores de Demonios de Seguridad Pública, Denji se abrirá paso a puros cortes en un mundo plagado de amenazas brutales, todo con el único fin de cumplir sus sencillos y mundanos deseos de juventud</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/gantz.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Gantz</h4>
+                    <p class="genero-tarjeta">Género: Accion, gore</p>
+                    <p class="sinopsis-manhwa">Kei Kurono y Masaru Kato son dos estudiantes que mueren trágicamente atropellados por un tren subterráneo tras intentar salvar a un indigente. En lugar de pasar al más allá, despiertan de golpe en un misterioso apartamento de Tokio junto a otros desconocidos y una enigmática esfera negra conocida como Gantz. La esfera les proporciona trajes especiales y armas futuristas con una sola y despiadada regla: si quieren recuperar sus vidas, deberán participar en un sádico juego de supervivencia consistente en cazar y aniquilar a peligrosos alienígenas que viven ocultos entre la sociedad humana</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/hells-paradise.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Hell's Paradise</h4>
+                    <p class="genero-tarjeta">Género: Accion, fantasia</p>
+                    <p class="sinopsis-manhwa">Gabimaru "El Vacío" es un ninja asesino de élite de la aldea Iwagakure que ha sido capturado y condenado a muerte. Debido a su entrenamiento sobrehumano, sobrevive milagrosamente a todas las ejecuciones, revelando que en el fondo se aferra a la vida por el profundo amor que siente hacia su esposa. Para ganarse el perdón absoluto de sus crímenes, acepta una misión suicida: viajar a Shinkansen, una misteriosa isla paradisíaca pero letal, para encontrar el Elíxir de la Inmortalidad. Acompañado por la hábil verdugo Yamada Asaemon Sagiri, deberá enfrentarse a peligrosos criminales rivales y a grotescas deidades monstruosas para lograr salir con vida.</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐☆</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/hunterxhunter.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Hunter x Hunter</h4>
+                    <p class="genero-tarjeta">Género: Accion, aventura</p>
+                    <p class="sinopsis-manhwa">Gon Freecss es un niño optimista y enérgico que descubre que su padre, a quien creía muerto, en realidad está vivo y es uno de los mejores "Cazadores" del mundo, una élite licenciada para rastrear tesoros, monstruos y criminales. Decidido a seguir sus pasos y entender por qué lo dejó, Gon emprende un viaje para tomar el mortal Examen de Cazador. En el camino entabla una profunda amistad con Killua, Kurapika y Leorio, adentrándose en un mundo repleto de peligros, misterios y un complejo sistema de combate basado en la energía espiritual conocida como Nen.</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/jujutsu-kaisen.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Jujutsu Kaisen </h4>
+                    <p class="genero-tarjeta">Género: Accion, fantasia</p>
+                    <p class="sinopsis-manhwa">Yuji Itadori es un estudiante de preparatoria con una fuerza física excepcional que prefiere pasar el tiempo en el club de ocultismo de su escuela. Su vida cambia trágicamente cuando, para salvar a sus amigos del ataque de espíritus malignos, toma la desesperada decisión de comerse un dedo momificado de Ryomen Sukuna, el temible Rey de las Maldiciones. Al convertirse en el contenedor vivo de esta entidad, Yuji es sentenciado a muerte. No obstante, se le concede una prórroga para unirse a la Escuela Técnica de Hechicería de Tokio, donde aprenderá a controlar la energía maldita mientras busca recolectar el resto de los fragmentos de Sukuna antes de su ejecución final</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/kaijun°8.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Kaiju No. 8</h4>
+                    <p class="genero-tarjeta">Género: Accion, ciencia ficcion</p>
+                    <p class="sinopsis-manhwa">Japón sufre el constante azote de colosales y destructivas criaturas conocidas como Kaijus. Kafka Hibino, un hombre de 32 años, trabaja resignado limpiando los cadáveres que deja el Cuerpo de Defensa tras los combates. A pesar de haber abandonado su sueño infantil de unirse a la élite militar, su vida da un vuelco absoluto cuando un pequeño monstruo volador entra en su cuerpo. Esto le otorga la asombrosa habilidad de transformarse en un poderoso híbrido humano-kaiju con fuerza sobrehumana. Bajo el nombre clave de "Kaiju N°8", Kafka intentará pasar las pruebas del ejército ocultando su identidad para cumplir su promesa de luchar junto a sus seres queridos</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/one punch man.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">One Punch-Man</h4>
+                    <p class="genero-tarjeta">Género: Accion, seinen</p>
+                    <p class="sinopsis-manhwa"> Saitama es un héroe por pasatiempo que, tras tres años de un entrenamiento diario riguroso y absurdo, logró obtener una fuerza física tan descomunal que es capaz de derrotar a cualquier enemigo o colosal monstruo de un solo puñetazo. Aunque esto suena ideal, su poder abrumador ha convertido su vida en un tedio absoluto. Sin sentir ya la adrenalina del combate, Saitama busca desesperadamente un oponente digno que represente un verdadero desafío, mientras lidia con el anonimato y una caótica Asociación de Héroes llena de excéntricos personajes</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐☆</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/sakamoto-days.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Sakamoto Days</h4>
+                    <p class="genero-tarjeta">Género: Accion, Shōnen </p>
+                    <p class="sinopsis-manhwa"> Tarō Sakamoto era el asesino a sueldo definitivo, temido por todos los criminales y respetado en el submundo. Sin embargo, todo cambió el día en que se enamoró perdidamente de una cajera, decidiendo retirarse por completo de la violencia para casarse y formar una familia. Años después, Sakamoto ha ganado unos cuantos kilos de más y atiende felizmente una tranquila tienda de conveniencia local junto a su esposa e hija. La paz se complica cuando su antiguo pasado empieza a perseguirlo mediante sicarios y viejos rivales dispuestos a eliminarlo, obligándolo a defender su negocio y su hogar con una estricta regla familiar: ¡prohibido volver a matar a nadie!</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/tokyoghoul.webp" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Tokyo Ghoul</h4>
+                    <p class="genero-tarjeta">Género: Accion, gore</p>
+                    <p class="sinopsis-manhwa"> Ken Kaneki es un estudiante universitario tímido y amante de la literatura cuya vida cambia drásticamente tras sobrevivir al ataque de un "Ghoul", una criatura de aspecto humano que solo puede alimentarse de carne humana. Para salvarle la vida, los médicos le trasplantan de urgencia los órganos de su atacante, convirtiéndolo accidentalmente en el primer híbrido mitad humano y mitad ghoul. Atrapado entre dos mundos que se odian a muerte, Kaneki deberá ocultar su nueva identidad mientras aprende a sobrevivir en la violenta sociedad ghoul y lucha desesperadamente por retener su humanidad.</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-manhwa" tabindex="0">
+                <img src="imagenes2/mangas/accion/vinland saga.jpg" alt="Portada" class="imagen-portada">
+                <div class="contenido-tarjeta">
+                    <h4 class="titulo-manhwa">Vinland Saga</h4>
+                    <p class="genero-tarjeta">Género: Accion, aventura</p>
+                    <p class="sinopsis-manhwa"> Ambientada en el siglo XI, sigue a Thorfinn, un joven islandés que vio a su compasivo padre ser asesinado a traición por el astuto líder mercenario Askeladd. Consumido por el odio, Thorfinn se une a su banda para ganarse el derecho a batirse en un duelo justo de venganza, transformándose en un letal niño soldado en medio de las brutales invasiones vikingas de Inglaterra. Sin embargo, tras perder su único propósito de vida, el joven deberá enfrentar sus propios demonios del pasado y emprender un doloroso camino de redención, buscando crear una tierra de paz libre de esclavitud y guerra: la legendaria Vinland</p>
+                    <span class="calificacion-tarjeta">⭐⭐⭐⭐</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+</html>
