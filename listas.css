@@ -334,7 +334,7 @@ footer {
   .menu {
     position: fixed;
     top: 14px;
-    left: 80px;
+    left: 55px;
     font-size: 1.5rem;
     z-index: 1000;
     cursor: pointer;
