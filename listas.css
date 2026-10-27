@@ -308,16 +308,15 @@ footer {
 
 @media(max-width:768px){
     .barranavegacion {
-        padding: 0 10px;
-        height: 45px;
+        padding: 0 15px;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: flex-start;
         gap: 15px;
     }
 
     .logo img {
-        height: 28px;
+        height: 45px;
     }
 
     .importante {
@@ -325,8 +324,7 @@ footer {
         width: auto;
         display: flex;
         align-items: center;
-        gap: 15px;
-        flex-grow: 0;
+        gap: 12px;
     }
 
     .barragenero {
@@ -334,35 +332,34 @@ footer {
     }
 
     #selecciongeneros {
-        font-size: 0.9rem;
-        padding: 4px 8px;
+        font-size: 0.85rem;
+        padding: 5px 8px;
     }
 
     .buscador {
         position: static;
-        padding: 4px 8px;
-        width: 140px;
+        padding: 4px 10px;
     }
 
     .buscador input {
-        width: 100%;
+        width: 130px;
         font-size: 0.9rem;
-        padding: 0;
     }
 
-    .menu {
-        position: static;
-        font-size: 1.5rem;
+    .menu{
+        position: fixed;
+        top: 12px;
+        left: 80px;
+        font-size: 1.8rem;
+        z-index: 1000;
         cursor: pointer;
-        margin-right: 0;
     }
 
     .opciones-verticales{
         position: fixed;
-        top: 45px;
         width: 260px;
         left: -260px;
-        height: calc(100vh - 45px);
+        height: 50vh;
         background-color: #151515;
         border-right: 3px solid #00B4F0;
         padding: 30px 20px;
