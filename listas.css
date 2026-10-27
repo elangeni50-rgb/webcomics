@@ -342,7 +342,7 @@ footer {
 
  .menu{
         position: fixed;
-        top: 20px;
+        top: 10px;
         left: 80px;
         font-size: 1.8rem;
         z-index: 1000;
