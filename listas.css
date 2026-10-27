@@ -323,11 +323,18 @@ footer {
     width: 80vw;
   }
 
+  .importante {
+    position: static !important;
+    padding-left: 0 !important;
+    width: auto !important;
+    display: block !important;
+  }
+
   .logo {
-    position: absolute;
-    top: 12px;
-    left: 5px;
-    padding: 0;
+    position: absolute !important;
+    top: 12px !important;
+    left: 5px !important;
+    padding: 0 !important;
   }
 
   .logo img {
@@ -337,45 +344,46 @@ footer {
   }
 
   .menu {
-    position: absolute;
-    top: 12px;
-    left: 55px;
+    position: absolute !important;
+    top: 12px !important;
+    left: 55px !important;
     font-size: 1.8rem;
     z-index: 1000;
     cursor: pointer;
-    padding: 0;
+    padding: 0 !important;
   }
 
   .barragenero {
-    position: absolute;
-    top: 17px;
-    left: 95px;
-    padding: 0;
+    position: absolute !important;
+    top: 17px !important;
+    left: 95px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   #selecciongeneros {
-    font-size: 0.8rem;
-    padding: 4px 6px;
-    border-radius: 6px;
+    font-size: 0.8rem !important;
+    padding: 4px 6px !important;
+    border-radius: 6px !important;
   }
 
   .buscador {
-    position: absolute;
-    top: 17px;
-    left: 195px;
-    padding: 4px 6px;
-    border-radius: 12px;
+    position: absolute !important;
+    top: 17px !important;
+    left: 195px !important;
+    padding: 4px 6px !important;
+    border-radius: 12px !important;
   }
 
   .buscador input {
-    background: none;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0 4px;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important;
+    padding: 0 4px !important;
     font-family: 'Sniglet', sans-serif;
-    width: 85px;
-    font-size: 0.85rem;
+    width: 85px !important;
+    font-size: 0.85rem !important;
   }
 
   .contenedor-principal.con-sidebar {
@@ -396,16 +404,16 @@ footer {
   .cuadricula-manhwas {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
-    align-items: stretch;
+    align-items: stretch !important;
   }
 
   .cuadricula-manhwas .tarjeta-manhwa:focus {
-    height: auto;
+    height: auto !important;
   }
 
   .cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa {
-    max-height: none;
-    overflow: visible;
+    max-height: none !important;
+    overflow: visible !important;
   }
 
   .imagen-portada {
