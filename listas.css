@@ -1,470 +1,435 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
 
-body {
-    background-color: #0b0c10;
-    color: #ffffff;
-    font-family: 'Sniglet', sans-serif;
-    padding-top: 100px;
-}
+body { 
+  background-color: #0b0c10; 
+  color: #ffffff; 
+  font-family: 'Sniglet', sans-serif; 
+  padding-top: 100px; 
+} 
 
-.carrusel{
-    width: 75vw;
-    margin:50px auto;
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    anchor-name: --micaros;
-}
+.carrusel { 
+  width: 75vw; 
+  margin: 50px auto; 
+  display: flex; 
+  overflow-x: auto; 
+  gap: 10px; 
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; 
+  anchor-name: --micaros; 
+} 
 
-.carrusel .sinopsis-manhwa{
-    font-size: 0.9rem;
-    color: #a4b3cc;
-    transition: max-height 0.4s ease; 
-}
+.carrusel .sinopsis-manhwa { 
+  font-size: 0.9rem; 
+  color: #a4b3cc; 
+  transition: max-height 0.4s ease; 
+} 
 
-.carrusel img{
-    border-radius: 20px;
-    height: 400px;
-    width: 250px;
-    margin-bottom: 10px;
-    gap: 30px;
-}
+.carrusel img { 
+  border-radius: 20px; 
+  height: 400px; 
+  width: 250px; 
+  margin-bottom: 10px; 
+  gap: 30px; 
+} 
 
-.sinopsis-manhwa1{
-    font-size: 0.9rem;
-    color: #a4b3cc;
-    text-align: justify;
-    overflow: hidden;
-    transition: max-height 0.4s ease; 
-}
+.sinopsis-manhwa1 { 
+  font-size: 0.9rem; 
+  color: #a4b3cc; 
+  text-align: justify; 
+  overflow: hidden; 
+  transition: max-height 0.4s ease; 
+} 
 
-.barranavegacion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #1a1a1a;
-    border-bottom: 3px solid #00B4F0;
-    display: flex;
-    align-items: center;
-    padding: 0 4%;
-    z-index: 1000;
-}
+.barranavegacion { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 70px; 
+  background-color: #1a1a1a; 
+  border-bottom: 3px solid #00B4F0; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 4%; 
+  z-index: 1000; 
+} 
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+.logo { 
+  display: flex; 
+  align-items: center; 
+} 
 
-.logo img {
-    height: 45px;
-    width: auto;
-    display: block;
-}
+.logo img { 
+  height: 45px; 
+  width: auto; 
+  display: block; 
+} 
 
-.importante {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 210px; 
-}
+.importante { 
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+  padding-left: 210px; 
+} 
 
-.barragenero {
-    display: flex;
-    align-items: center;
-    margin-right: auto; 
-}
+.barragenero { 
+  display: flex; 
+  align-items: center; 
+  margin-right: auto; 
+} 
 
-#selecciongeneros {
-    font-family: 'Sniglet', sans-serif;
-    font-size: 1.1rem;
-    padding: 8px 15px;
-    background-color: #252525;
-    color: white;
-    border: 2px solid #8ba4d4;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    transition: border-color 0.2s;
-}
+#selecciongeneros { 
+  font-family: 'Sniglet', sans-serif; 
+  font-size: 1.1rem; 
+  padding: 8px 15px; 
+  background-color: #252525; 
+  color: white; 
+  border: 2px solid #8ba4d4; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  outline: none; 
+  transition: border-color 0.2s; 
+} 
 
-#selecciongeneros:hover {
-    border-color: #00B4F0;
-}
+#selecciongeneros:hover { 
+  border-color: #00B4F0; 
+} 
 
-#selecciongeneros option {
-    background-color: #1a1a1a;
-}
+#selecciongeneros option { 
+  background-color: #1a1a1a; 
+} 
 
-.buscador {
-    display: flex;
-    align-items: center;
-    background-color: #252525;
-    border: 2px solid #333;
-    border-radius: 20px;
-    padding: 4px 12px;
-    transition: border-color 0.2s;
-}
+.buscador { 
+  display: flex; 
+  align-items: center; 
+  background-color: #252525; 
+  border: 2px solid #333; 
+  border-radius: 20px; 
+  padding: 4px 12px; 
+  transition: border-color 0.2s; 
+} 
 
-.buscador:focus-within {
-    border-color: #00B4F0;
-}
+.buscador:focus-within { 
+  border-color: #00B4F0; 
+} 
 
-.buscador input {
-    background: none;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 4px 8px;
-    font-family: 'Sniglet', sans-serif;
-    font-size: 1rem;
-    width: 320px; 
-}
+.buscador input { 
+  background: none; 
+  border: none; 
+  outline: none; 
+  color: white; 
+  padding: 4px 8px; 
+  font-family: 'Sniglet', sans-serif; 
+  font-size: 1rem; 
+  width: 320px; 
+} 
 
-.btn-buscar {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.btn-buscar { 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  padding: 0 5px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
 
-.btn-buscar i {
-    color: #aaaaaa;
-    font-size: 1rem;
-    transition: color 0.2s, transform 0.2s;
-}
+.btn-buscar i { 
+  color: #aaaaaa; 
+  font-size: 1rem; 
+  transition: color 0.2s, transform 0.2s; 
+} 
 
-.btn-buscar:hover i {
-    color: #00B4F0;
-    transform: scale(1.1);
-}
+.btn-buscar:hover i { 
+  color: #00B4F0; 
+  transform: scale(1.1); 
+} 
 
-.opciones-verticales {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 260px;
-    height: calc(100vh - 70px);
-    background-color: #151515;
-    border-right: 3px solid #00B4F0;
-    padding: 30px 20px;
-}
+.opciones-verticales { 
+  position: fixed; 
+  top: 70px; 
+  left: 0; 
+  width: 260px; 
+  height: calc(100vh - 70px); 
+  background-color: #151515; 
+  border-right: 3px solid #00B4F0; 
+  padding: 30px 20px; 
+} 
 
-.titulo-sidebar {
-    font-family: 'Press Start 2P', system-ui;
-    font-size: 0.75rem;
-    color: #ff9f1c;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
+.titulo-sidebar { 
+  font-family: 'Press Start 2P', system-ui; 
+  font-size: 0.75rem; 
+  color: #ff9f1c; 
+  margin-bottom: 25px; 
+  letter-spacing: 1px; 
+} 
 
-.opciones-verticales ul {
-    list-style: none;
-}
+.opciones-verticales ul { 
+  list-style: none; 
+} 
 
-.opciones-verticales ul li {
-    margin-bottom: 15px;
-}
+.opciones-verticales ul li { 
+  margin-bottom: 15px; 
+} 
 
-.opciones-verticales ul li a {
-    display: block;
-    font-family: 'Sniglet', sans-serif;
-    font-size: 1.4rem;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    transition: background 0.2s, color 0.2s;
-}
+.opciones-verticales ul li a { 
+  display: block; 
+  font-family: 'Sniglet', sans-serif; 
+  font-size: 1.4rem; 
+  color: #ffffff; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  border-radius: 10px; 
+  transition: background 0.2s, color 0.2s; 
+} 
 
-.opciones-verticales ul li a:hover,
-.opciones-verticales ul li a.activo {
-    background-color: #00B4F0;
-    color: #ffffff;
-}
+.opciones-verticales ul li a:hover, 
+.opciones-verticales ul li a.activo { 
+  background-color: #00B4F0; 
+  color: #ffffff; 
+} 
 
-.contenedor-principal.con-sidebar {
-    margin-left: 280px; 
-    max-width: calc(100% - 300px);
-    padding: 40px 20px;
-}
+.contenedor-principal.con-sidebar { 
+  margin-left: 280px; 
+  max-width: calc(100% - 300px); 
+  padding: 40px 20px; 
+} 
 
-.titulo-seccion {
-    font-family: "Bangers", system-ui;
-    font-size: 4rem; 
-    color: #adc1e6;
-    margin-bottom: 30px;
-    letter-spacing: 4px; 
-    text-shadow: 3px 3px 0px #0b0c10, 5px 5px 0px #ffffff; 
-}
+.titulo-seccion { 
+  font-family: "Bangers", system-ui; 
+  font-size: 4rem; 
+  color: #adc1e6; 
+  margin-bottom: 30px; 
+  letter-spacing: 4px; 
+  text-shadow: 3px 3px 0px #0b0c10, 5px 5px 0px #ffffff; 
+} 
 
-.cuadricula-manhwas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 30px;
-}
+.cuadricula-manhwas { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 30px; 
+} 
 
-.cuadricula-manhwas .tarjeta-manhwa {
-    background-color: #15171c;
-    border: 2px solid #8ba4d4;
-    border-radius: 12px;
-    padding: 12px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
+.cuadricula-manhwas .tarjeta-manhwa { 
+  background-color: #15171c; 
+  border: 2px solid #8ba4d4; 
+  border-radius: 12px; 
+  padding: 12px; 
+  text-align: center; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.2s ease, border-color 0.2s ease; 
+} 
 
-.cuadricula-manhwas .tarjeta-manhwa:hover {
-    transform: translateY(-5px);
-    border-color: #00B4F0;
-}
+.cuadricula-manhwas .tarjeta-manhwa:hover { 
+  transform: translateY(-5px); 
+  border-color: #00B4F0; 
+} 
 
-.imagen-portada {
-    width: 100%;
-    height: 290px;
-    object-fit: cover;
-    border-radius: 8px;
-}
+.imagen-portada { 
+  width: 100%; 
+  height: 290px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+} 
 
-.contenido-tarjeta {
-    padding: 10px 0 5px 0;
-}
+.contenido-tarjeta { 
+  padding: 10px 0 5px 0; 
+} 
 
-.titulo-manhwa {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 4px;
-}
+.titulo-manhwa { 
+  font-size: 1.2rem; 
+  color: #ffffff; 
+  margin-bottom: 4px; 
+} 
 
-.genero-tarjeta {
-    font-size: 0.85rem;
-    color: #8ba4d4;
-    margin-bottom: 8px;
-}
+.genero-tarjeta { 
+  font-size: 0.85rem; 
+  color: #8ba4d4; 
+  margin-bottom: 8px; 
+} 
 
-.tarjeta-manhwa{
-    background-color: #15171c;
-    border: 2px solid #8ba4d4;
-    border-radius: 12px;
-    padding: 12px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
+.sinopsis-manhwa { 
+  font-size: 0.9rem; 
+  color: #a4b3cc; 
+  max-height: 60px; 
+  overflow: hidden; 
+  transition: max-height 0.4s ease; 
+} 
 
-.sinopsis-manhwa {
-    font-size: 0.9rem;
-    color: #a4b3cc;
-    max-height: 60px; 
-    overflow: hidden;
-    transition: max-height 0.4s ease; 
-}
+.calificacion-tarjeta { 
+  font-size: 1.1rem; 
+  margin-top: 10px; 
+  color: #ff9f1c; 
+  display: block; 
+} 
 
-.calificacion-tarjeta {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    color: #ff9f1c;
-    display: block;
-}
+.cuadricula-manhwas .tarjeta-manhwa:focus { 
+  transform: scale(1.08); 
+  border-color: #ff9f1c; 
+  outline: none; 
+  z-index: 99; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7); 
+  background-color: #1c1f26; 
+} 
 
-.cuadricula-manhwas .tarjeta-manhwa:focus {
-  transform: scale(1.02);
-  border-color: #ff9f1c;
-  outline: none;
-  z-index: 99;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background-color: #1c1f26;
-  height: auto;
-}
+.cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa { 
+  max-height: 500px; 
+  overflow: visible; 
+} 
 
-.cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa {
-  max-height: max-content;
-  overflow: visible;
-  margin-bottom: 12px;
-}
+#checkmenu { 
+  display: none; 
+} 
 
-#checkmenu {
-    display: none;
-}
+footer { 
+  padding-top: 10px; 
+  background-color: #dfcb5e; 
+  height: 80px; 
+  text-align: center; 
+  padding-right: 50px; 
+  font-size: 1.1rem; 
+  color: #441616; 
+  margin-left: 260px; 
+} 
 
-footer {
-    padding-top: 10px;
-    background-color: #adc1e6;
-    height: 80px;
-    text-align: center;
-    padding-right: 50px;
-    font-size: 1.1rem;
-    color: #0b0c10;
-    margin-left: 260px;
-}
-@media(max-width:768px){
-  .barranavegacion {
-    height: 60px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
+@media(max-width:768px){ 
+  .opciones-verticales { 
+    position: fixed; 
+    width: 260px; 
+    left: -260px; 
+    height: 50vh; 
+    background-color: #151515; 
+    border-right: 3px solid #00B4F0; 
+    padding: 30px 20px; 
+    border-bottom-right-radius: 20%; 
+    transition: left 0.3s ease; 
+  } 
 
-  .menu {
-    position: static;
-    font-size: 1.5rem;
-    z-index: 1001;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+  .carrusel { 
+    width: 80vw; 
+  } 
 
-  .logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+  .barranavegacion { 
+    height: 55px; 
+    padding: 0 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 5px; 
+  } 
 
-  .logo img {
-    height: 35px;
-    width: auto;
-  }
+  .menu { 
+    position: static; 
+    font-size: 1.8rem; 
+    z-index: 1000; 
+    cursor: pointer; 
+    margin: 0; 
+    padding: 0 5px; 
+  } 
 
-  .barragenero {
-    position: static;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+  .logo { 
+    position: static; 
+    margin: 0; 
+    padding: 0 5px; 
+  } 
 
-  #selecciongeneros {
-    font-size: 0.85rem;
-    padding: 6px 8px;
-    border-radius: 8px;
-  }
+  .logo img { 
+    height: 35px; 
+    width: auto; 
+  } 
 
-  .buscador {
-    position: static;
-    margin: 0;
-    padding: 4px 8px;
-    border-radius: 15px;
-    flex-grow: 1;
-    max-width: 140px;
-    display: flex;
-    align-items: center;
-  }
+  .barragenero { 
+    position: static; 
+    margin: 0; 
+    padding: 0 5px; 
+  } 
 
-  .buscador input {
-    background: none;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0;
-    font-family: 'Sniglet', sans-serif;
-    width: 100%;
-    font-size: 0.85rem;
-  }
-  
-  .btn-buscar {
-    padding: 0;
-  }
+  #selecciongeneros { 
+    font-size: 0.9rem; 
+    padding: 6px 10px; 
+  } 
 
-  .importante {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 0;
-    gap: 5px;
-  }
+  .buscador { 
+    position: static; 
+    margin: 0; 
+    padding: 4px 5px; 
+  } 
 
-  .opciones-verticales {
-    position: fixed;
-    width: 260px;
-    left: -260px;
-    top: 60px;
-    height: calc(100vh - 60px);
-    background-color: #151515;
-    border-right: 3px solid #00B4F0;
-    padding: 30px 20px;
-    border-bottom-right-radius: 0%;
-    transition: left 0.3s ease;
-  }
+  .buscador input { 
+    background: none; 
+    border: none; 
+    outline: none; 
+    color: white; 
+    font-family: 'Sniglet', sans-serif; 
+    width: 100px; 
+    font-size: 0.9rem; 
+  } 
 
-  #checkmenu:checked ~ .opciones-verticales {
-    left: 0;
-  }
+  .importante { 
+    display: flex; 
+    align-items: center; 
+    width: auto; 
+    padding-left: 0; 
+    gap: 5px; 
+  } 
 
-  .carrusel {
-    width: 80vw;
-  }
+  .contenedor-principal.con-sidebar { 
+    margin-left: 10px; 
+    max-width: 100%; 
+  } 
 
-  .contenedor-principal.con-sidebar {
-    margin-left: 10px;
-    max-width: 100%;
-    padding: 20px 10px;
-  }
+  #checkmenu:checked ~ .opciones-verticales { 
+    left: 0; 
+  } 
 
-  footer {
-    margin-left: 0 !important;
-    padding-right: 0 !important;
-    width: 100% !important;
-  }
+  footer { 
+    margin-left: 0 !important; 
+    padding-right: 0 !important; 
+    width: 100% !important; 
+  } 
 
-  .cuadricula-manhwas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 15px;
-    align-items: start;
-  }
+  .cuadricula-manhwas { 
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+    gap: 15px; 
+    align-items: start; 
+  } 
 
-  .imagen-portada {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+  .cuadricula-manhwas .tarjeta-manhwa:focus { 
+    transform: scale(1.05); 
+    border-color: #ff9f1c; 
+    outline: none; 
+    z-index: 99; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7); 
+    background-color: #1c1f26; 
+    height: auto; 
+  } 
 
-  .titulo-manhwa {
-    font-size: 0.9rem;
-  }
+  .cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa { 
+    max-height: max-content; 
+    overflow: visible; 
+    margin-bottom: 10px; 
+  } 
 
-  .genero-tarjeta {
-    font-size: 0.75rem;
-  }
+  .imagen-portada { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+  } 
 
-  .calificacion-tarjeta {
-    font-size: 0.9rem;
-  }
+  .titulo-manhwa { 
+    font-size: 0.9rem; 
+  } 
 
-  .sinopsis-manhwa {
-    font-size: 0.8rem;
-    color: #a4b3cc;
-    max-height: 50px;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-}
+  .genero-tarjeta { 
+    font-size: 0.75rem; 
+  } 
 
- footer{
-    
-    padding-top: 10px;
-    background-color: #dfcb5e;
-    height: 80px;
-    text-align: center;
-   padding-right: 50px;
-     font-size: 1.1rem;
-    color: #441616;
-    margin-left: 260px;
-  
+  .calificacion-tarjeta { 
+    font-size: 0.9rem; 
+  } 
 }
