@@ -334,7 +334,7 @@ footer {
   .menu {
     position: fixed;
     top: 14px;
-    left: 65px;
+    left: 658px;
     font-size: 1.5rem;
     z-index: 1000;
     cursor: pointer;
@@ -351,7 +351,7 @@ footer {
 
   .barragenero {
     position: absolute;
-    left: 130px;
+    left: 140px;
   }
 
   #selecciongeneros {
@@ -363,7 +363,7 @@ footer {
 
   .buscador {
     position: absolute;
-    left: 320px;
+    left: 330px;
     padding: 4px 6px;
     border-radius: 12px;
   }
