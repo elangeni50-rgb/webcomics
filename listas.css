@@ -308,31 +308,33 @@ footer {
 
 @media(max-width:768px){
     .barranavegacion {
-        padding: 0 2%;
+        padding: 0 10px;
+        justify-content: space-between;
     }
 
     .logo img {
-        height: 35px;
+        height: 30px;
     }
 
     .importante {
-        padding-left: 20px;
+        padding-left: 10px;
+        width: auto;
     }
 
     .barragenero {
         position: static;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     #selecciongeneros {
-        font-size: 0.85rem;
-        padding: 6px 10px;
+        font-size: 0.75rem;
+        padding: 4px 6px;
     }
 
     .buscador {
         position: static;
-        width: 140px;
-        padding: 4px 8px;
+        width: 120px;
+        padding: 4px 6px;
     }
 
     .buscador input {
@@ -342,8 +344,8 @@ footer {
         color: white;
         font-family: 'Sniglet', sans-serif;
         width: 100%;
-        font-size: 0.85rem;
-        padding: 2px 4px;
+        font-size: 0.75rem;
+        padding: 2px;
         display: block;
     }
 
@@ -352,7 +354,7 @@ footer {
     }
 
     .btn-buscar i {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .opciones-verticales{
