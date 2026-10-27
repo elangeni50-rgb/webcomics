@@ -324,7 +324,7 @@ footer {
   }
 
   .barranavegacion {
-    height: 65px;
+    height: 55px;
     padding: 0 5px;
     display: flex;
     align-items: center;
@@ -346,7 +346,7 @@ footer {
   }
 
   .logo img {
-    height: 38px;
+    height: 35px;
     width: auto;
   }
 
@@ -441,6 +441,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
 footer {
   padding-top: 10px;
