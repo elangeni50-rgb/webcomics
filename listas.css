@@ -332,29 +332,36 @@ footer {
     }
 
     .buscador {
-        position: static;
-        width: 120px;
-        padding: 4px 6px;
+        position: static !important;
+        width: 120px !important;
+        height: auto !important;
+        padding: 4px 8px !important;
+        border-radius: 20px !important;
+        background-color: #252525 !important;
+        justify-content: space-between !important;
     }
 
     .buscador input {
-        background: none;
-        border: none;
-        outline: none;
-        color: white;
-        font-family: 'Sniglet', sans-serif;
-        width: 100%;
-        font-size: 0.75rem;
-        padding: 2px;
-        display: block;
+        background: none !important;
+        border: none !important;
+        outline: none !important;
+        color: white !important;
+        font-family: 'Sniglet', sans-serif !important;
+        width: 100% !important;
+        font-size: 0.75rem !important;
+        padding: 2px !important;
+        display: block !important;
     }
 
     .btn-buscar {
-        padding: 0 2px;
+        padding: 0 2px !important;
+        width: auto !important;
+        height: auto !important;
+        display: inline-flex !important;
     }
 
     .btn-buscar i {
-        font-size: 0.75rem;
+        font-size: 0.75rem !important;
     }
 
     .opciones-verticales{
