@@ -325,44 +325,47 @@ footer {
 
   .barranavegacion {
     height: 55px !important;
-    padding: 0 !important;
+    padding: 0 5px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 5px !important;
   }
 
   .importante {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    display: flex !important;
+    align-items: center !important;
     padding-left: 0 !important;
     width: auto !important;
-    display: block !important;
+    margin: 0 !important;
+    order: 3 !important;
   }
 
   .logo {
-    position: absolute !important;
-    top: 12px !important;
-    left: 5px !important;
+    position: static !important;
+    order: 1 !important;
   }
 
   .logo img {
-    height: 30px !important;
+    height: 35px !important;
     width: auto !important;
   }
 
   .menu {
-    position: fixed !important;
-    top: 12px !important;
-    left: 50px !important;
-    font-size: 1.5rem !important;
-    z-index: 2000 !important;
+    position: static !important;
+    font-size: 1.6rem !important;
+    z-index: 1000 !important;
+    cursor: pointer !important;
+    order: 2 !important;
     color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
   .barragenero {
-    position: absolute !important;
-    top: 14px !important;
-    left: 80px !important;
+    position: static !important;
     margin: 0 !important;
-    padding: 0 !important;
   }
 
   #selecciongeneros {
@@ -373,12 +376,13 @@ footer {
   }
 
   .buscador {
-    position: absolute !important;
-    top: 14px !important;
-    left: 175px !important;
+    position: static !important;
     padding: 4px 6px !important;
     border-radius: 12px !important;
-    width: 120px !important;
+    max-width: 110px !important;
+    margin: 0 !important;
+    order: 4 !important;
+    flex-grow: 1 !important;
   }
 
   .buscador input {
