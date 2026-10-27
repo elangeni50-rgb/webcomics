@@ -324,63 +324,51 @@ footer {
   }
 
   .barranavegacion {
-    height: 55px;
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-
-  .importante {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 0;
-    gap: 5px;
+    height: 50px;
+    padding: 0;
   }
 
   .logo {
-    position: static;
-    order: 1;
-    flex-shrink: 0;
+    position: absolute;
+    top: 12px;
+    left: 5px;
   }
 
   .logo img {
-    height: 35px;
+    height: 28px;
     width: auto;
   }
 
   .menu {
-    position: static;
-    font-size: 1.6rem;
-    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-size: 1.5rem;
+    z-index: 1001;
     cursor: pointer;
-    order: 2;
-    flex-shrink: 0;
   }
 
-  .barragenero {
-    position: static;
-    margin: 0;
-    order: 3;
-    flex-shrink: 0;
+  .importante {
+    position: absolute;
+    top: 12px;
+    left: 75px;
+    padding-left: 0;
+    width: auto;
   }
 
   #selecciongeneros {
-    font-size: 0.8rem;
-    padding: 4px 6px;
+    font-size: 0.75rem;
+    padding: 3px 5px;
     border-radius: 6px;
     max-width: 80px;
   }
 
   .buscador {
-    position: static;
-    padding: 4px 6px;
-    border-radius: 15px;
-    flex-grow: 1;
-    max-width: 110px;
-    order: 4;
+    position: absolute;
+    top: 12px;
+    left: 160px;
+    padding: 3px 6px;
+    border-radius: 12px;
   }
 
   .buscador input {
@@ -390,8 +378,12 @@ footer {
     color: white;
     padding: 0 2px;
     font-family: 'Sniglet', sans-serif;
-    width: 100%;
-    font-size: 0.85rem;
+    width: 105px;
+    font-size: 0.8rem;
+  }
+
+  .btn-buscar i {
+    font-size: 0.8rem;
   }
 
   .contenedor-principal.con-sidebar {
@@ -422,7 +414,6 @@ footer {
   .cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa {
     max-height: none;
     overflow: visible;
-    margin-bottom: 8px;
   }
 
   .imagen-portada {
@@ -444,7 +435,6 @@ footer {
     font-size: 0.9rem;
   }
 }
-
 
 footer {
   padding-top: 10px;
