@@ -343,6 +343,7 @@ footer {
   .logo {
     position: static;
     order: 1;
+    flex-shrink: 0;
   }
 
   .logo img {
@@ -356,19 +357,21 @@ footer {
     z-index: 1000;
     cursor: pointer;
     order: 2;
+    flex-shrink: 0;
   }
 
   .barragenero {
     position: static;
     margin: 0;
     order: 3;
+    flex-shrink: 0;
   }
 
   #selecciongeneros {
     font-size: 0.8rem;
     padding: 4px 6px;
     border-radius: 6px;
-    max-width: 90px;
+    max-width: 80px; /* <--- Bajalo a 70px o 75px si querés que el género sea todavía menos ancho */
   }
 
   .buscador {
@@ -376,7 +379,7 @@ footer {
     padding: 4px 6px;
     border-radius: 15px;
     flex-grow: 1;
-    max-width: 130px;
+    max-width: 110px; /* <--- Se achicó para que no aplaste ni se monte sobre el género */
     order: 4;
   }
 
