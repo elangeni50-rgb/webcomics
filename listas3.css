@@ -370,6 +370,21 @@ footer {
         border-radius: 8px;
     }
 
+    
+ footer{
+    
+    padding-top: 10px;
+    background-color: #dfcb5e;
+    height: 80px;
+    text-align: center;
+   padding-right: 50px;
+     font-size: 1.1rem;
+    color: #441616;
+    margin-left: 260px;
+  
+}
+
+
     .titulo-manhwa {
         font-size: 0.9rem;
     }
