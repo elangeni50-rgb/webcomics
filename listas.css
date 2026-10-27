@@ -323,67 +323,72 @@ footer {
     width: 80vw;
   }
 
+  .barranavegacion {
+    height: 65px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
   .importante {
-    position: static !important;
-    padding-left: 0 !important;
-    width: auto !important;
-    display: block !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    gap: 5px;
   }
 
   .logo {
-    position: absolute !important;
-    top: 12px !important;
-    left: 5px !important;
-    padding: 0 !important;
+    position: static;
+    order: 1;
   }
 
   .logo img {
-    height: 45px;
+    height: 38px;
     width: auto;
-    display: block;
   }
 
   .menu {
-    position: absolute !important;
-    top: 12px !important;
-    left: 55px !important;
-    font-size: 1.8rem;
+    position: static;
+    font-size: 1.6rem;
     z-index: 1000;
     cursor: pointer;
-    padding: 0 !important;
+    order: 2;
   }
 
   .barragenero {
-    position: absolute !important;
-    top: 17px !important;
-    left: 95px !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    position: static;
+    margin: 0;
+    order: 3;
   }
 
   #selecciongeneros {
-    font-size: 0.8rem !important;
-    padding: 4px 6px !important;
-    border-radius: 6px !important;
+    font-size: 0.8rem;
+    padding: 4px 6px;
+    border-radius: 6px;
+    max-width: 90px;
   }
 
   .buscador {
-    position: absolute !important;
-    top: 17px !important;
-    left: 195px !important;
-    padding: 4px 6px !important;
-    border-radius: 12px !important;
+    position: static;
+    padding: 4px 6px;
+    border-radius: 15px;
+    flex-grow: 1;
+    max-width: 130px;
+    order: 4;
   }
 
   .buscador input {
-    background: none !important;
-    border: none !important;
-    outline: none !important;
-    color: white !important;
-    padding: 0 4px !important;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 2px;
     font-family: 'Sniglet', sans-serif;
-    width: 85px !important;
-    font-size: 0.85rem !important;
+    width: 100%;
+    font-size: 0.85rem;
   }
 
   .contenedor-principal.con-sidebar {
@@ -404,16 +409,17 @@ footer {
   .cuadricula-manhwas {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
-    align-items: stretch !important;
+    align-items: stretch;
   }
 
   .cuadricula-manhwas .tarjeta-manhwa:focus {
-    height: auto !important;
+    height: auto;
   }
 
   .cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa {
-    max-height: none !important;
-    overflow: visible !important;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 8px;
   }
 
   .imagen-portada {
