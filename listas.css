@@ -340,14 +340,13 @@ footer {
     height: 35px;
   }
 
-  .menu {
-    position: fixed;
-    top: 14px;
-    left: 69px;
-    font-size: 1.5rem;
-    z-index: 1000;
-    cursor: pointer;
-  }
+ .menu{
+        position: fixed;
+        top: 12px;
+        left: 80px;
+        font-size: 1.8rem;
+        z-index: 1000;
+    }
 
   .contenedor-principal.con-sidebar {
     margin-left: 10px;
