@@ -307,6 +307,51 @@ footer {
 }
 
 @media(max-width:768px){
+    .barranavegacion {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .importante {
+        padding-left: 0;
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .barragenero {
+        position: static;
+    }
+
+    #selecciongeneros {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .buscador {
+        position: static;
+        padding: 4px 8px;
+        max-width: 140px;
+    }
+
+    .buscador input {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 2px;
+    }
+
+    .menu {
+        position: static;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
     .opciones-verticales{
         position: fixed;
         width: 260px;
@@ -323,15 +368,6 @@ footer {
         width: 80vw;
     }
 
-    .menu{
-        position: fixed;
-        top: 12px;
-        left: 80px;
-        font-size: 1.8rem;
-        z-index: 1000;
-        cursor: pointer;
-    }
-
     .contenedor-principal.con-sidebar{
         margin-left: 10px;
         max-width: 100%;
@@ -339,27 +375,6 @@ footer {
 
     #checkmenu:checked ~ .opciones-verticales{
         left: 0;
-    }
-
-    .barragenero {
-        position: absolute;
-        left: 130px;
-    }
-
-    .buscador {
-        position: absolute;
-        left: 320px;
-    }
-
-    .buscador input {
-        background: none;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 4px;
-        font-family: 'Sniglet', sans-serif;
-        width: 110px;
-        font-size: 1rem;
     }
 
     footer {
