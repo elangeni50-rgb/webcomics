@@ -327,6 +327,15 @@ footer {
     height: 55px;
   }
 
+  .importante {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    width: auto;
+    display: block;
+  }
+
   .logo img {
     height: 35px;
   }
@@ -334,7 +343,7 @@ footer {
   .menu {
     position: fixed;
     top: 14px;
-    left: 658px;
+    left: 55px;
     font-size: 1.5rem;
     z-index: 1000;
     cursor: pointer;
@@ -351,7 +360,10 @@ footer {
 
   .barragenero {
     position: absolute;
-    left: 140px;
+    top: 14px;
+    left: 130px;
+    margin: 0;
+    padding: 0;
   }
 
   #selecciongeneros {
@@ -363,7 +375,8 @@ footer {
 
   .buscador {
     position: absolute;
-    left: 330px;
+    top: 14px;
+    left: 235px;
     padding: 4px 6px;
     border-radius: 12px;
   }
