@@ -307,63 +307,6 @@ footer {
 }
 
 @media(max-width:768px){
-    .barranavegacion {
-        padding: 0 10px;
-        justify-content: space-between;
-    }
-
-    .logo img {
-        height: 30px;
-    }
-
-    .importante {
-        padding-left: 10px;
-        width: auto;
-    }
-
-    .barragenero {
-        position: static;
-        margin-right: 5px;
-    }
-
-    #selecciongeneros {
-        font-size: 0.75rem;
-        padding: 4px 6px;
-    }
-
-    .buscador {
-        position: static !important;
-        width: 120px !important;
-        height: auto !important;
-        padding: 4px 8px !important;
-        border-radius: 20px !important;
-        background-color: #252525 !important;
-        justify-content: space-between !important;
-    }
-
-    .buscador input {
-        background: none !important;
-        border: none !important;
-        outline: none !important;
-        color: white !important;
-        font-family: 'Sniglet', sans-serif !important;
-        width: 100% !important;
-        font-size: 0.75rem !important;
-        padding: 2px !important;
-        display: block !important;
-    }
-
-    .btn-buscar {
-        padding: 0 2px !important;
-        width: auto !important;
-        height: auto !important;
-        display: inline-flex !important;
-    }
-
-    .btn-buscar i {
-        font-size: 0.75rem !important;
-    }
-
     .opciones-verticales{
         position: fixed;
         width: 260px;
@@ -396,6 +339,27 @@ footer {
 
     #checkmenu:checked ~ .opciones-verticales{
         left: 0;
+    }
+
+    .barragenero {
+        position: absolute;
+        left: 130px;
+    }
+
+    .buscador {
+        position: absolute;
+        left: 320px;
+    }
+
+    .buscador input {
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 4px;
+        font-family: 'Sniglet', sans-serif;
+        width: 110px;
+        font-size: 1rem;
     }
 
     footer {
