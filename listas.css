@@ -278,17 +278,19 @@ body {
 }
 
 .cuadricula-manhwas .tarjeta-manhwa:focus {
-    transform: scale(1.08);
-    border-color: #ff9f1c; 
-    outline: none; 
-    z-index: 99;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-    background-color: #1c1f26;
+  transform: scale(1.02);
+  border-color: #ff9f1c;
+  outline: none;
+  z-index: 99;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  background-color: #1c1f26;
+  height: auto;
 }
 
 .cuadricula-manhwas .tarjeta-manhwa:focus .sinopsis-manhwa {
-    max-height: 500px;
-    overflow: visible;
+  max-height: max-content;
+  overflow: visible;
+  margin-bottom: 12px;
 }
 
 #checkmenu {
@@ -305,94 +307,154 @@ footer {
     color: #0b0c10;
     margin-left: 260px;
 }
-
 @media(max-width:768px){
-    .opciones-verticales{
-        position: fixed;
-        width: 260px;
-        left: 260px;
-        height: 50vh;
-        background-color: #151515;
-        border-right: 3px solid #00B4F0;
-        padding: 30px 20px;
-        border-bottom-right-radius: 20%;
-        transition: left 0.3s ease;
-    }
+  .barranavegacion {
+    height: 60px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
 
-    .carrusel{
-        width: 80vw;
-    }
+  .menu {
+    position: static;
+    font-size: 1.5rem;
+    z-index: 1001;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
 
-    .menu{
-        position: fixed;
-        top: 12px;
-        left: 80px;
-        font-size: 1.8rem;
-        z-index: 1000;
-        cursor: pointer;
-    }
+  .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
 
-    .contenedor-principal.con-sidebar{
-        margin-left: 10px;
-        max-width: 100%;
-    }
+  .logo img {
+    height: 35px;
+    width: auto;
+  }
 
-    #checkmenu:checked ~ .opciones-verticales{
-        left: 0;
-    }
+  .barragenero {
+    position: static;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
 
-    .barragenero {
-        position: absolute;
-        left: 130px;
-    }
+  #selecciongeneros {
+    font-size: 0.85rem;
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
 
-    .buscador {
-        position: absolute;
-        left: 320px;
-    }
+  .buscador {
+    position: static;
+    margin: 0;
+    padding: 4px 8px;
+    border-radius: 15px;
+    flex-grow: 1;
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+  }
 
-    .buscador input {
-        background: none;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 4px;
-        font-family: 'Sniglet', sans-serif;
-        width: 110px;
-        font-size: 1rem;
-    }
+  .buscador input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    font-family: 'Sniglet', sans-serif;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  
+  .btn-buscar {
+    padding: 0;
+  }
 
-    footer {
-        margin-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100% !important;
-    }
+  .importante {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    gap: 5px;
+  }
 
-    .cuadricula-manhwas {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 15px;
-    }
+  .opciones-verticales {
+    position: fixed;
+    width: 260px;
+    left: -260px;
+    top: 60px;
+    height: calc(100vh - 60px);
+    background-color: #151515;
+    border-right: 3px solid #00B4F0;
+    padding: 30px 20px;
+    border-bottom-right-radius: 0%;
+    transition: left 0.3s ease;
+  }
 
-    .imagen-portada {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
+  #checkmenu:checked ~ .opciones-verticales {
+    left: 0;
+  }
 
-    .titulo-manhwa {
-        font-size: 0.9rem;
-    }
+  .carrusel {
+    width: 80vw;
+  }
 
-    .genero-tarjeta {
-        font-size: 0.75rem;
-    }
+  .contenedor-principal.con-sidebar {
+    margin-left: 10px;
+    max-width: 100%;
+    padding: 20px 10px;
+  }
 
-    .calificacion-tarjeta {
-        font-size: 0.9rem;
-    }
+  footer {
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .cuadricula-manhwas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    align-items: start;
+  }
+
+  .imagen-portada {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .titulo-manhwa {
+    font-size: 0.9rem;
+  }
+
+  .genero-tarjeta {
+    font-size: 0.75rem;
+  }
+
+  .calificacion-tarjeta {
+    font-size: 0.9rem;
+  }
+
+  .sinopsis-manhwa {
+    font-size: 0.8rem;
+    color: #a4b3cc;
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
 }
-
 
  footer{
     
