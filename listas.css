@@ -12,7 +12,7 @@ body {
 }
 
 .carrusel {
-  width: 75vw;
+  width: 5vw;
   margin: 50px auto;
   display: flex;
   overflow-x: auto;
