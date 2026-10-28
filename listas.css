@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0b0c1;
+  background-color: #0b0c10;
   color: #ffffff;
   font-family: 'Sniglet', sans-serif;
   padding-top: 100px;
@@ -311,7 +311,7 @@ footer {
     position: fixed;
     width: 260px;
     left: -260px;
-    top: auto;
+    top: 55px;
     height: 50vh;
     background-color: #151515;
     border-right: 3px solid #00B4F0;
